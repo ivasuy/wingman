@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +43,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="mb-10">
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-300",
@@ -56,9 +57,12 @@ const Navbar: React.FC = () => {
           {/* Logo Section */}
           <div className="relative flex flex-col items-center">
             <a href="#" className="flex items-center">
-              <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-wingman-600 to-wingman-800 bg-clip-text text-transparent">
-                Wingman
-              </span>
+              <Image
+                src="/xoegan.png"
+                alt="Wingman Logo"
+                width={80}
+                height={50}
+              />
             </a>
 
             {/* Gradient Line */}
@@ -136,7 +140,7 @@ const Navbar: React.FC = () => {
           </nav>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
