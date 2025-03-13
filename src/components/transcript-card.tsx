@@ -111,6 +111,7 @@ const TranscriptCard: React.FC<TranscriptCardProps> = ({ className }) => {
       {/* Card Footer */}
       <div className="border-t border-gray-800 p-4">
         <Button
+          disabled
           variant="outline"
           className="w-full bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-300"
         >

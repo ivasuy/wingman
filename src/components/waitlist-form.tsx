@@ -35,6 +35,7 @@ const WaitlistForm: React.FC<WaitlistFormProps> = ({ className }) => {
 
   return (
     <div
+      id="waitlist"
       className={cn("flex flex-col items-start text-left w-full", className)}
     >
       <PlaceholdersAndVanishInput

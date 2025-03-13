@@ -1,12 +1,13 @@
 import React from "react";
 import { Sparkles } from "lucide-react";
 import WaitlistForm from "./waitlist-form";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="waitlist" className="relative bg-background text-white py-8">
+    <footer className="relative bg-gray-900 text-white py-8">
       <div className="absolute inset-0 bg-grid opacity-10 z-0"></div>
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center px-4 md:px-6">
@@ -25,47 +26,70 @@ const Footer: React.FC = () => {
           </h2>
 
           {/* Footer Content */}
-          <div className="border-t border-wingman-800 pt-4">
-            <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row items-center justify-between text-sm">
-              {/* Brand */}
-              <div className="text-center sm:text-left w-full sm:w-auto mb-4 sm:mb-0">
-                <span className="text-lg font-bold bg-gradient-to-r text-gradient-wingman bg-clip-text text-transparent hover:scale-105 transition-transform inline-block">
-                  Wingman
-                </span>
+          <div className=" pt-4 flex flex-col items-center">
+            {/* Brand */}
+            <div className="relative flex flex-col items-center mb-8">
+              <Image
+                src="/xoegan.png"
+                alt="Wingman Logo"
+                width={80}
+                height={50}
+              />
+              <div className="w-[15rem] md:w-[20rem] h-2 relative flex justify-center mt-1">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px w-3/4" />
               </div>
+            </div>
 
-              {/* Navigation Links */}
-              <div className="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 mb-4 sm:mb-0 w-full sm:w-auto">
-                <a
-                  href="#features"
-                  className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
-                >
-                  Features
-                </a>
-                <a
-                  href="#coming-soon"
-                  className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
-                >
-                  Coming Soon
-                </a>
-                <a
-                  href="#audience"
-                  className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
-                >
-                  Who Is It For
-                </a>
-                <a
-                  href="#stories"
-                  className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
-                >
-                  Stories
-                </a>
-              </div>
+            {/* Navigation Links - Now Centered and Aligned Properly */}
+            <nav className="w-full">
+              <ul className="flex flex-wrap justify-center space-x-6 sm:space-x-8 text-sm mb-4 sm:mb-6">
+                <li>
+                  <a
+                    href="#features"
+                    className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#audience"
+                    className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
+                  >
+                    Who Is It For
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#stories"
+                    className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
+                  >
+                    Stories
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#coming-soon"
+                    className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
+                  >
+                    Coming Soon
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#founders"
+                    className="text-wingman-200 hover:text-white transition-colors hover:scale-105"
+                  >
+                    Founders
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
-              {/* Copyright */}
-              <div className="text-xs text-wingman-300 text-center sm:text-left w-full sm:w-auto">
-                © {currentYear} Wingman AI. All rights reserved.
-              </div>
+            {/* Copyright at the Bottom */}
+            <div className="text-xs text-wingman-300 text-center w-full pt-4">
+              © {currentYear} Wingman AI. All rights reserved.
             </div>
           </div>
         </div>

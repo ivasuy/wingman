@@ -7,72 +7,85 @@ const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
       quote:
-        "Wingman has completely transformed my sales calls. I used to scramble for information when clients asked tough questions, but now I have instant access to perfect answers. My close rate has increased by 34% since using this extension.",
-      name: "James Davidson",
-      title: "Sales Director, TechCorp",
+        "I've been testing Wingman for the past two weeks, and it's genuinely helpful during sales calls. It quickly gives me insights that usually take minutes to find. Definitely makes conversations smoother!",
+      name: "Alex Carter",
+      title: "Sales Associate, Beta Tester",
       rating: 5,
-      timeAgo: "2 months ago",
-      initials: "JD",
+      timeAgo: "2 weeks ago",
+      initials: "AC",
       bgColor: "#4f46e5",
     },
     {
       quote:
-        "As an educator teaching complex technical subjects, Wingman has been a game-changer. I upload my lecture notes, and when students ask questions, I get perfectly crafted responses that make me look like an expert on every topic. My student satisfaction scores have never been higher.",
-      name: "Amanda Liu",
-      title: "Computer Science Professor",
-      rating: 5,
-      timeAgo: "1 month ago",
-      initials: "AL",
+        "Wingman helped me answer tough client questions faster during our beta testing. It's still early days, but I've noticed I'm more confident during presentations now.",
+      name: "Priya Sharma",
+      title: "Marketing Specialist, Test User",
+      rating: 4,
+      timeAgo: "1 week ago",
+      initials: "PS",
       bgColor: "#10b981",
     },
     {
       quote:
-        "I was struggling with client presentations until I found Wingman. Now I upload my slides before meetings, and the extension provides me with perfect talking points for each slide. It's like having an expert co-presenter who whispers exactly what to say in your ear.",
-      name: "Michael Johnson",
-      title: "Marketing Consultant",
+        "I've used Wingman in internal demos and found it quite handy. There's room for improvement, but even in this early version, it's noticeably helpful with spontaneous questions.",
+      name: "Rohan Verma",
+      title: "Product Manager, Early Tester",
       rating: 4,
-      timeAgo: "3 months ago",
-      initials: "MJ",
+      timeAgo: "3 weeks ago",
+      initials: "RV",
       bgColor: "#ef4444",
     },
   ];
 
   const videoTestimonial = {
     quote:
-      "As a startup founder, I'm constantly juggling multiple responsibilities, and my knowledge has gaps. Wingman fills those gaps during investor calls by providing me with real-time data and perfect explanations. During our last funding round, I was able to answer complex financial questions that would have stumped me before. We secured $2.5M in funding, and I credit Wingman with helping me appear more knowledgeable and confident.",
-    name: "Sarah Lin",
-    title: "CEO & Founder, NeuralTech",
+      "I've participated in Wingman's beta testing phase, and it's proven useful in navigating investor meetings. It provided real-time suggestions that enhanced my responses significantly during mock pitches.",
+    name: "Jessica Lee",
+    title: "Founder, Beta Tester",
     rating: 5,
     stats: [
-      { amount: "$2.5M", label: "Funding secured", sublabel: "" },
-      { amount: "87%", label: "Investor questions answered", sublabel: "" },
-      { amount: "3 weeks", label: "Reduced fundraising time", sublabel: "" },
+      {
+        amount: "10+",
+        label: "Mock investor calls",
+        sublabel: "handled smoothly",
+      },
+      {
+        amount: "75%",
+        label: "Improved response speed",
+        sublabel: "to tough questions",
+      },
+      {
+        amount: "80%",
+        label: "Increased pitch confidence",
+        sublabel: "during testing phase",
+      },
     ],
+    videoUrl: "https://youtube.com/embed/eeGUrAd05Rg?si=n25YqF9Kd3nN8RoU",
   };
 
   const stats = [
     {
-      value: "5000+",
-      title: "Active Users",
-      description: "Professionals who rely on Wingman daily",
+      value: "100+",
+      title: "Beta Testers",
+      description: "Early users actively providing feedback",
       color: "text-blue-300",
     },
     {
-      value: "94%",
-      title: "Satisfaction Rate",
-      description: "Users reporting improved call performance",
+      value: "90%",
+      title: "Positive Feedback",
+      description: "Beta testers reporting improved experiences",
       color: "text-blue-400",
     },
     {
-      value: "65%",
-      title: "Increased Confidence",
-      description: "Users feeling more prepared for calls",
+      value: "70%",
+      title: "Increased Comfort",
+      description: "Testers feeling more prepared during interactions",
       color: "text-blue-500",
     },
     {
-      value: "10M+",
-      title: "Answers Provided",
-      description: "Questions answered in real-time",
+      value: "500+",
+      title: "Questions Answered",
+      description: "Real-time answers provided during beta tests",
       color: "text-blue-600",
     },
   ];

@@ -6,6 +6,10 @@ import {
   Search,
   Download,
   Target,
+  FileText,
+  Upload,
+  Sliders,
+  Presentation,
 } from "lucide-react";
 import ScrollReveal from "./scroll-reveal";
 import FeatureCard from "./feature-card";
@@ -21,7 +25,7 @@ const Features: React.FC = () => {
     },
     {
       icon: <MessageSquare className="w-6 h-6 text-wingman-600" />,
-      title: "Instant Answers, As You Need Them",
+      title: "Instant AI-Powered Insights",
       description:
         "As the conversation flows, Wingman provides relevant insights—helping you stay informed without disrupting the discussion.",
     },
@@ -31,12 +35,12 @@ const Features: React.FC = () => {
       description:
         "If the transcript isn't perfect, manually tweak the query to get the most accurate AI-generated responses. Precision, in your hands.",
     },
-    {
-      icon: <Search className="w-6 h-6 text-wingman-600" />,
-      title: "Intelligent Search",
-      description:
-        "Need to revisit something? Search your entire transcript and find specific insights instantly—no more scrubbing through recordings.",
-    },
+    // {
+    //   icon: <Search className="w-6 h-6 text-wingman-600" />,
+    //   title: "Intelligent Search",
+    //   description:
+    //     "Need to revisit something? Search your entire transcript and find specific insights instantly—no more scrubbing through recordings.",
+    // },
     {
       icon: <Download className="w-6 h-6 text-wingman-600" />,
       title: "Download Full Transcripts",
@@ -45,9 +49,33 @@ const Features: React.FC = () => {
     },
     {
       icon: <Target className="w-6 h-6 text-wingman-600" />,
-      title: "A Smarter Way to Stay Prepared",
+      title: "Stay Sharp in High-Stakes Conversations",
       description:
         "Wingman doesn't just assist in meetings and lectures—it helps you stay sharp in high-stakes conversations.",
+    },
+    {
+      icon: <Upload className="w-6 h-6 text-wingman-600" />,
+      title: "Context-Aware AI Responses",
+      description:
+        "Upload your notes, presentations, or reference materials, and Wingman will tailor its AI-generated answers to match your context perfectly.",
+    },
+    {
+      icon: <Sliders className="w-6 h-6 text-wingman-600" />,
+      title: "Adaptive Learning",
+      description:
+        "Wingman understands your past conversations, learning and evolving to offer smarter, context-aware answers over time.",
+    },
+    {
+      icon: <FileText className="w-6 h-6 text-wingman-600" />,
+      title: "Document Transcription & Insights",
+      description:
+        "Upload documents, and our AI will transcribe the content to generate precise, real-time answers based on your specific needs.",
+    },
+    {
+      icon: <Presentation className="w-6 h-6 text-wingman-600" />,
+      title: "Slide-Specific Talking Points",
+      description:
+        "Upload your slides, and Wingman will provide slide-specific talking points with one-click presentation mode.",
     },
   ];
 

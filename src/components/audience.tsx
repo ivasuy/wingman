@@ -56,7 +56,7 @@ const Audience: React.FC = () => {
         </h2>
       </ScrollReveal>
 
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 relative z-10">
         {audiences.map((audience, index) => (
           <AudienceCard
             key={index}
@@ -81,9 +81,9 @@ const Audience: React.FC = () => {
           keep you informed, organized, and ahead of the curve. Ready to take
           your meetings, lectures, and discussions to the next level?
         </p>
-        <a href="#waitlist" className="wingman-button">
-          Try Wingman Today
-        </a>
+        {/* <a href="#waitlist" className="wingman-button">
+          Join Waitlist
+        </a> */}
       </ScrollReveal>
     </section>
   );

@@ -33,9 +33,10 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { href: "#features", label: "Features" },
-    { href: "#coming-soon", label: "Coming Soon" },
     { href: "#audience", label: "Who Is It For" },
     { href: "#stories", label: "Stories" },
+    { href: "#coming-soon", label: "Coming Soon" },
+    { href: "#founders", label: "Founders" },
   ];
 
   const toggleMobileMenu = () => {
@@ -43,7 +44,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="mb-10">
+    <div className="mb-20">
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-300",
@@ -67,8 +68,8 @@ const Navbar: React.FC = () => {
 
             {/* Gradient Line */}
             <div className="w-[15rem] md:w-[20rem] h-2 relative flex justify-center mt-1">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent h-[2px] w-3/4 blur-sm" />
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px w-3/4" />
             </div>
           </div>
 

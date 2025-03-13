@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  FileText,
-  Brain,
   Rocket,
   Plug,
   Notebook,
   Globe,
-  MessageCircle,
-  Presentation,
+  Users,
+  CalendarCheck,
+  Eye,
+  ListChecks,
 } from "lucide-react";
 import ScrollReveal from "./scroll-reveal";
 import { Meteors } from "./ui/meteors";
@@ -38,61 +38,75 @@ const ComingSoon: React.FC = () => {
         </ScrollReveal>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Smart Notes */}
+          {/* OCR-Based Note Extraction */}
           <ScrollReveal
             animation="slide-right"
             className="glass-card rounded-xl p-8 border-2 border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60 h-full overflow-hidden"
           >
             <div className="feature-icon-container w-16 h-16 rounded-xl">
-              <FileText className="w-8 h-8 text-wingman-600" />
+              <Eye className="w-8 h-8 text-wingman-600" />
             </div>
             <h3 className="text-2xl font-semibold mb-4">
-              Smart Notes & Personalized Insights
+              OCR-Based Image Text Detection
             </h3>
             <p className="text-muted-foreground">
-              Upload your notes, presentations, or reference materials, and
-              Wingman will tailor its AI-generated answers to match your context
-              perfectly.
+              If an image is displayed on your screen, Wingman will
+              automatically detect and extract the text for you—no need for
+              manual scanning.
             </p>
             <Meteors number={20} />
           </ScrollReveal>
-
-          {/* Adaptive AI */}
+          {/* Meeting Follow Mode */}
+          <ScrollReveal
+            animation="slide-right"
+            className="glass-card rounded-xl p-8 border-2 border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60 h-full overflow-hidden"
+          >
+            <div className="feature-icon-container w-16 h-16 rounded-xl">
+              <Notebook className="w-8 h-8 text-wingman-600" />
+            </div>
+            <h3 className="text-2xl font-semibold mb-4">Meeting Follow Mode</h3>
+            <p className="text-muted-foreground">
+              If you're inactive for a long time during a meeting, Wingman will
+              detect it and prompt you with the latest agenda updates, ensuring
+              you're always in sync.
+            </p>
+            <Meteors number={20} />
+          </ScrollReveal>
+          {/* AI-Powered Speaker Identification */}
           <ScrollReveal
             animation="slide-left"
             className="glass-card rounded-xl p-8 border border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60 h-full overflow-hidden"
           >
             <div className="feature-icon-container w-16 h-16 rounded-xl">
-              <Brain className="w-8 h-8 text-wingman-600" />
+              <Users className="w-8 h-8 text-wingman-600" />
             </div>
             <h3 className="text-2xl font-semibold mb-4">
-              Adaptive AI for Deeper Understanding
+              AI-Powered Speaker Identification
             </h3>
             <p className="text-muted-foreground">
-              Wingman will soon understand your past conversations, learning and
-              evolving to offer smarter, context-aware answers.
+              Wingman will automatically detect and tag speakers in
+              transcriptions, making it easier to follow multi-person
+              discussions.
             </p>
             <Meteors number={20} />
           </ScrollReveal>
-
-          {/* Custom Prompting */}
+          {/* Schedule Meetings in the Extension */}
           <ScrollReveal
             animation="slide-right"
             className="glass-card rounded-xl p-8 border-2 border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60 h-full overflow-hidden"
           >
             <div className="feature-icon-container w-16 h-16 rounded-xl">
-              <MessageCircle className="w-8 h-8 text-wingman-600" />
+              <CalendarCheck className="w-8 h-8 text-wingman-600" />
             </div>
             <h3 className="text-2xl font-semibold mb-4">
-              Custom Prompting & File Transcription
+              Schedule & Manage Meetings
             </h3>
             <p className="text-muted-foreground">
-              Upload documents, and our AI will transcribe the content to
-              generate precise, real-time answers based on your specific needs.
+              Plan, host, and manage meetings seamlessly within the Wingman
+              extension—your all-in-one meeting solution.
             </p>
             <Meteors number={20} />
           </ScrollReveal>
-
           {/* Multi-Language Support */}
           <ScrollReveal
             animation="slide-left"
@@ -110,7 +124,6 @@ const ComingSoon: React.FC = () => {
             </p>
             <Meteors number={20} />
           </ScrollReveal>
-
           {/* Notes Integration */}
           <ScrollReveal
             animation="slide-right"
@@ -121,33 +134,11 @@ const ComingSoon: React.FC = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4">Notes Integration</h3>
             <p className="text-muted-foreground">
-              Upload your notes or connect with Notion, Evernote, and Google
-              Drive to give Wingman the context it needs for better answers.
+              Connect with Notion, Evernote, and Google Drive to give Wingman
+              the context it needs for better answers.
             </p>
             <Meteors number={20} />
           </ScrollReveal>
-
-          {/* Presentation Support */}
-          <ScrollReveal
-            animation="slide-left"
-            className="glass-card rounded-xl p-8 border border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60 h-full overflow-hidden"
-          >
-            <div className="w-full relative max-w-xs">
-              <div className="feature-icon-container w-16 h-16 rounded-xl">
-                <Presentation className="w-8 h-8 text-wingman-600" />
-              </div>
-              <h3 className="text-2xl font-semibold mb-4">
-                Presentation Support
-              </h3>
-              <p className="text-muted-foreground">
-                Upload your slides, and Wingman will provide slide-specific
-                talking points with one-click presentation mode.
-              </p>
-            </div>
-            <Meteors number={20} />
-          </ScrollReveal>
-
-          {/* Powerful Integrations
           <ScrollReveal
             animation="slide-right"
             className="glass-card rounded-xl p-8 border-2 border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60"
@@ -159,11 +150,29 @@ const ComingSoon: React.FC = () => {
               Powerful Integrations
             </h3>
             <p className="text-muted-foreground">
-              Wingman seamlessly connects with **your favorite tools and
-              platforms**, delivering the most relevant information during video
+              Wingman seamlessly connects with your favorite tools and
+              platforms, delivering the most relevant information during video
               calls.
             </p>
-          </ScrollReveal> */}
+          </ScrollReveal>
+          {/* Smart Action Suggestions (New Feature) */}
+          <ScrollReveal
+            animation="slide-left"
+            className="glass-card rounded-xl p-8 border border-gray-700/50 hover:border-blue-700/30 bg-gray-800/60 h-full overflow-hidden"
+          >
+            <div className="feature-icon-container w-16 h-16 rounded-xl">
+              <ListChecks className="w-8 h-8 text-wingman-600" />
+            </div>
+            <h3 className="text-2xl font-semibold mb-4">
+              Smart Action Suggestions
+            </h3>
+            <p className="text-muted-foreground">
+              Wingman will detect key action items in your meetings, generate
+              task lists, assign responsibilities, and sync with your favorite
+              productivity tools like Notion, Trello, or Asana.
+            </p>
+            <Meteors number={20} />
+          </ScrollReveal>
         </div>
 
         <ScrollReveal animation="slide-up" delay={200} className="mt-12">

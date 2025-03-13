@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import CountdownTimer from "@/components/countdown-timer";
 import TestimonialsSection from "@/components/testimonials-section";
 import ParticlesBackground from "@/components/ui/particles-background";
+import FoundersSection from "@/components/founders-section";
 
 export default function Home() {
   const targetDate = new Date();
@@ -30,6 +31,7 @@ export default function Home() {
           <Audience />
           <TestimonialsSection />
           <ComingSoon />
+          <FoundersSection />
         </main>
         <Footer />
       </div>
